@@ -69,7 +69,7 @@ return [
             'host' => 'ec2-54-217-222-254.eu-west-1.compute.amazonaws.com',
             'port' =>   '5432',
             'database' => 'dav3gsq6htviem',
-            'username' => 'yjaqgzdvosvjlez',
+            'username' => 'yjaqgzdvosvjle',
             'password' => '1e7336be1ce35300a51e138b2a64307bfaadeade442be985566e50c9f65e2cba',
             'charset' => 'utf8',
             'prefix' => '',
