@@ -63,8 +63,19 @@ return [
             'prefix'    => 'default',
             'strict'    => false,
         ],
-
           'pgsql' => [
+            'driver'   => 'pgsql',
+            'host'     =>  'localhost',
+            'port'     =>   '5432',
+            'database' =>  'homestead',
+            'username' => 'homestead',
+            'password' =>  'secret',
+            'charset'  => 'utf8',
+            'prefix'   => env('DB_PREFIX', 'default_'),
+            'schema'   => 'public',
+            
+          ],
+          'pgsqlh' => [
             'driver' => 'pgsql',
             'host' => 'ec2-54-217-222-254.eu-west-1.compute.amazonaws.com',
             'port' =>   '5432',
@@ -75,17 +86,17 @@ return [
             'prefix' => '',
             'schema' => 'public',
             'sslmode' => 'prefer',
-        ],
+            ],
 
-        'sqlsrv' => [
-            'driver'   => 'sqlsrv',
-            'host'     => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'charset'  => 'utf8',
-            'prefix'   => '',
-        ],
+            'sqlsrv' => [
+                'driver'   => 'sqlsrv',
+                'host'     => env('DB_HOST', 'localhost'),
+                'database' => env('DB_DATABASE', 'forge'),
+                'username' => env('DB_USERNAME', 'forge'),
+                'password' => env('DB_PASSWORD', ''),
+                'charset'  => 'utf8',
+                'prefix'   => '',
+            ],
 
     ],
 
