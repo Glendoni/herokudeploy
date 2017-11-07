@@ -63,7 +63,7 @@ return [
             'prefix'    => 'default',
             'strict'    => false,
         ],
-          'pgsql' => [
+          'pgsqlh' => [
             'driver'   => 'pgsql',
             'host'     =>  'localhost',
             'port'     =>   '5432',
@@ -75,7 +75,7 @@ return [
             'schema'   => 'public',
             
           ],
-          'pgsqlh' => [
+          'pgsql' => [
             'driver' => 'pgsql',
             'host' => 'ec2-54-217-222-254.eu-west-1.compute.amazonaws.com',
             'port' =>   '5432',
